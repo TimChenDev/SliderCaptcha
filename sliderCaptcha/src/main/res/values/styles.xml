@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SeekBarStyle" parent="Base.Widget.AppCompat.SeekBar">
+        <item name="android:thumb">@drawable/thumb</item>
+        <item name="android:progressDrawable">@drawable/progress</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">@string/please_slide</item>
+    </style>
+
+
+    <style name="SeekBarStyle.New" parent="Widget.AppCompat.SeekBar">
+        <item name="android:thumb">@drawable/thumb2</item>
+        <item name="android:progressDrawable">@drawable/progress</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">向右滑動滑塊完成拼圖</item>
+    </style>
+</resources>

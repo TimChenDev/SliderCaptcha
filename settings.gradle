@@ -1,0 +1,3 @@
+include ':sliderCaptcha'
+include ':example'
+rootProject.name = "SliderCaptcha"
