@@ -6,10 +6,10 @@ import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.support.v4.content.ContextCompat
+import android.support.v7.widget.AppCompatSeekBar
 import android.util.AttributeSet
 import android.util.Log
-import androidx.appcompat.widget.AppCompatSeekBar
-import androidx.core.content.ContextCompat
 import com.timchentw.slidercaptcha.Utils.dp2px
 
 

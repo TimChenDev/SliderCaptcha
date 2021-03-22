@@ -2,9 +2,12 @@ package com.timchentw.slidercaptcha
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Path
+import android.support.v7.widget.AppCompatImageView
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatImageView
 import com.timchentw.slidercaptcha.Utils.decoderBase64
 
 
