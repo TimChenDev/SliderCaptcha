@@ -6,10 +6,9 @@ import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.AppCompatSeekBar
 import android.util.AttributeSet
 import android.util.Log
+import android.widget.SeekBar
 import com.timchentw.slidercaptcha.Utils.dp2px
 
 
@@ -18,7 +17,8 @@ import com.timchentw.slidercaptcha.Utils.dp2px
  *  @time   2021/3/18
  *  @desc
  */
-class CustomSeekBar : AppCompatSeekBar {
+@SuppressLint("AppCompatCustomView")
+class CustomSeekBar : SeekBar {
 
 
     private lateinit var textPaint: Paint
@@ -76,8 +76,8 @@ class CustomSeekBar : AppCompatSeekBar {
         Log.d("1232342315", "res2: $res2")
         Log.d("1232342315", "res3: $res3")
 
-        progressDrawable = ContextCompat.getDrawable(context, ta.getResourceId(2, R.drawable.progress))
-        thumb = ContextCompat.getDrawable(context, ta.getResourceId(3, R.drawable.thumb))
+        progressDrawable = context.resources.getDrawable(ta.getResourceId(2, R.drawable.progress))
+        thumb = context.resources.getDrawable(ta.getResourceId(3, R.drawable.thumb))
 
         ta.recycle()
     }
