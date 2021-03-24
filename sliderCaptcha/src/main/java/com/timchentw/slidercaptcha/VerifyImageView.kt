@@ -6,8 +6,8 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
-import android.support.v7.widget.AppCompatImageView
 import android.util.AttributeSet
+import android.widget.ImageView
 import com.timchentw.slidercaptcha.Utils.decoderBase64
 
 
@@ -16,7 +16,8 @@ import com.timchentw.slidercaptcha.Utils.decoderBase64
  *  @time   2021/3/18
  *  @desc
  */
-class VerifyImageView : AppCompatImageView {
+@SuppressLint("AppCompatCustomView")
+class VerifyImageView : ImageView {
 
     private lateinit var position: Position
     private var puzzleBase64 = ""
